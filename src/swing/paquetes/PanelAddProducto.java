@@ -17,7 +17,14 @@ public class PanelAddProducto extends javax.swing.JPanel {
     public PanelAddProducto() {
         initComponents();
     }
-
+    
+    public int getCodigo(){
+        return Integer.parseInt(txtCodigo.getText()); 
+    }
+    
+    public String getNombre(){
+        return txtNombre.getText(); 
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
