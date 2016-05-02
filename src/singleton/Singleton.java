@@ -1,10 +1,14 @@
 /*
- * PATRON SINGLETON 
+ *  PATRON SINGLETON 
+ *  - Constructor privado evitando el "new"
+ *  - Tiene un metodo public static para obtener el objeto
+ *  - Tiene una propiedad private static que apuntara al objeto
  */
 package singleton;
 
 public class Singleton {
-    private static Singleton instance;
+    //1 forma de hacerlo creando aqui el objeto
+    private static Singleton instance = new Singleton();
 
     private Singleton() {
     }
