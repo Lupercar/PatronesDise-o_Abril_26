@@ -20,4 +20,9 @@ public class Repositorio {
     static public Repositorio getInstance(){
         return instance; 
     }
+    
+//    retorno la lista de productos
+    public List<Producto> getProductos(){
+        return productos;
+    }
 }//fin class Repositorio.entidades
