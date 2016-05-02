@@ -12,8 +12,8 @@ public class Producto {
     
 //  A parte le pongo un constructor con parametros
     public Producto(int codigo, String nombre) {
-        setCodigo(codigo);
-        setNombre(nombre);
+        this.setCodigo(codigo);
+        this.setNombre(nombre);
     }
 
     public int getCodigo() {
@@ -30,5 +30,10 @@ public class Producto {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+    
+//    Añado un metodo parecido al toString necesario para la parte grafica
+    public String getDescripcion(){
+        return this.getCodigo()+"/"+this.getNombre(); 
     }
 }//fin class Producto.entidades
