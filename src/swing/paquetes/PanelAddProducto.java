@@ -32,20 +32,19 @@ public class PanelAddProducto extends javax.swing.JPanel {
         lblNombre = new javax.swing.JLabel();
         txtCodigo = new javax.swing.JTextField();
         txtNombre = new javax.swing.JTextField();
-        btnAdd = new javax.swing.JButton();
+
+        Marco.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         lblCodigo.setText("Codigo:");
 
         lblNombre.setText("Nombre:");
 
-        btnAdd.setText("Add");
-
         javax.swing.GroupLayout MarcoLayout = new javax.swing.GroupLayout(Marco);
         Marco.setLayout(MarcoLayout);
         MarcoLayout.setHorizontalGroup(
             MarcoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(MarcoLayout.createSequentialGroup()
-                .addGap(26, 26, 26)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MarcoLayout.createSequentialGroup()
+                .addContainerGap(33, Short.MAX_VALUE)
                 .addGroup(MarcoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MarcoLayout.createSequentialGroup()
                         .addComponent(lblCodigo)
@@ -54,15 +53,14 @@ public class PanelAddProducto extends javax.swing.JPanel {
                         .addComponent(lblNombre)
                         .addGap(14, 14, 14)))
                 .addGroup(MarcoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnAdd)
                     .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap())
         );
         MarcoLayout.setVerticalGroup(
             MarcoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MarcoLayout.createSequentialGroup()
-                .addGap(21, 21, 21)
+                .addContainerGap()
                 .addGroup(MarcoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCodigo)
                     .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -70,8 +68,6 @@ public class PanelAddProducto extends javax.swing.JPanel {
                 .addGroup(MarcoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNombre)
                     .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(btnAdd)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -96,7 +92,6 @@ public class PanelAddProducto extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Marco;
-    private javax.swing.JButton btnAdd;
     private javax.swing.JLabel lblCodigo;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JTextField txtCodigo;
