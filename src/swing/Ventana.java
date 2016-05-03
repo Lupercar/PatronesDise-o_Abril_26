@@ -103,6 +103,8 @@ public class Ventana extends javax.swing.JFrame {
         int codigo = panelAddProducto.getCodigo(); 
         String nombre = panelAddProducto.getNombre(); 
         repo.getProductos().add(new Producto(codigo, nombre));
+//        Ahora aplicaria el patron Observer en la ventana de la lista
+//        lo hago desde la clase Repositorio
     }//GEN-LAST:event_btnAddActionPerformed
 
     /**
