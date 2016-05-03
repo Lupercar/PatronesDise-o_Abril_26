@@ -1,4 +1,7 @@
 package factory;
+
+import factory.interfaces.ProductoCreable;
+
 /*
     El patron factory se utiliza para crear objetos en memoria.
     A veces tenemos varias clases hijo de un padre. Con el factory 
@@ -11,5 +14,8 @@ package factory;
     las hijas.
 */
 public class ProductoFactory {
-    
+//    La factoria tiene un metodo que devuelve la interfaz
+    public ProductoCreable newInstance(int codigo, String nombre){
+        
+    }
 }//fin class ProductoFactory.factory
