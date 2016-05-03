@@ -8,6 +8,11 @@ public abstract class Producto implements ProductoCreable {
     private int codigo; 
     private String nombre; 
 
+    public Producto(int codigo, String nombre) {
+        setCodigo(codigo);
+        setNombre(nombre);
+    }
+
     @Override
     public int getCodigo() {
         return codigo;
