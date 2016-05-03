@@ -9,7 +9,7 @@ package observable;
     4.-Tiene que tener una lista de la interfaz donde ir almacenando los 
     oyentes a avisar.
  */
-public class Oyente implements OyenteListener {
+public class Oyente implements EmisorEventoListener {
 
     @Override
     public void realizarOperacion(int valor) {

@@ -1,5 +1,5 @@
 package observable;
 
-public interface OyenteListener {
+public interface EmisorEventoListener {
     void realizarOperacion(int valor); 
 }//fin interface OyenteListener.observable
