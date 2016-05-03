@@ -14,4 +14,8 @@ public class EmisorEvento {
     public void setValor(int valor) {
         this.valor = valor;
     }
+    
+    public void EmisorEventoAdd(EmisorEventoListener oyente){
+        oyentes.add(oyente); 
+    }
 }//fin class EmisorEvento.observable
